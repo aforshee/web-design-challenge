@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Bootstrap Visualization Dashboard</title>
+      
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <!-- Creates the Overall Grid -->
+        <div class="container">
+            
+            <!-- Setup navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Lattitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="comparisons.html">Comparison</a>
+                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="https://github.com/aforshee/python-api-challenge/blob/master/Latitude_vs.Temp_Plot.png?raw=true">Temperature</a>
+                          <a class="dropdown-item" href="https://github.com/aforshee/python-api-challenge/blob/master/Latitude_vs_Cloudiness_Plot.png?raw=true">Cloudiness</a>
+                          <a class="dropdown-item" href="https://github.com/aforshee/python-api-challenge/blob/master/Latitude_vs_Humidity_Plot.png?raw=true">Humidity</a>
+                          <a class="dropdown-item" href="https://github.com/aforshee/python-api-challenge/blob/master/Latitude_vs_WindSpeed_Plot.png?raw=true">Windspeed</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            
+            <!-- Setup first row --> 
+            <table id="example" class="table table-striped table-bordered" style="width:100%">
+              <thead>
+                <tr style="text-align: right;">
+                  <th></th>
+                  <th>City</th>
+                  <th>Cloudiness</th>
+                  <th>Country</th>
+                  <th>Date</th>
+                  <th>Humidity</th>
+                  <th>Lat</th>
+                  <th>Lng</th>
+                  <th>Max Temp</th>
+                  <th>Wind Speed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>0</th>
+                  <td>Pisco</td>
+                  <td>17</td>
+                  <td>PE</td>
+                  <td>1589050241</td>
+                  <td>78</td>
+                  <td>-13.70</td>
+                  <td>-76.22</td>
+                  <td>295.37</td>
+                  <td>4.60</td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td>Tasiilaq</td>
+                  <td>75</td>
+                  <td>GL</td>
+                  <td>1589050071</td>
+                  <td>64</td>
+                  <td>65.61</td>
+                  <td>-37.64</td>
+                  <td>274.15</td>
+                  <td>3.60</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Atuona</td>
+                  <td>97</td>
+                  <td>PF</td>
+                  <td>1589050245</td>
+                  <td>75</td>
+                  <td>-9.80</td>
+                  <td>-139.03</td>
+                  <td>300.45</td>
+                  <td>8.33</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>Albany</td>
+                  <td>92</td>
+                  <td>US</td>
+                  <td>1589050203</td>
+                  <td>39</td>
+                  <td>42.60</td>
+                  <td>-73.97</td>
+                  <td>278.71</td>
+                  <td>2.24</td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td>Måløy</td>
+                  <td>96</td>
+                  <td>NO</td>
+                  <td>1589050245</td>
+                  <td>75</td>
+                  <td>61.94</td>
+                  <td>5.11</td>
+                  <td>278.15</td>
+                  <td>5.10</td>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td>Fairbanks</td>
+                  <td>1</td>
+                  <td>US</td>
+                  <td>1589050231</td>
+                  <td>43</td>
+                  <td>64.84</td>
+                  <td>-147.72</td>
+                  <td>288.71</td>
+                  <td>2.10</td>
+                </tr>
+              </tbody>
+            </table>
+              <footer class="footer">
+                <div class="container">
+                    <span class = "text-muted">This is a footer.</span>
+                </div>
+            </footer>
+        </body>
+
+</html>
